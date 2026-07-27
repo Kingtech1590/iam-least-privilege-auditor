@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-24T15:26:23.444668+00:00",
+  "findings": [
+    {"entity": "user/dev-jsmith", "policy": "InlineFullAccess", "severity": "HIGH", "message": "Wildcard/broad action '*' allowed"},
+    {"entity": "user/dev-jsmith", "policy": "InlineFullAccess", "severity": "MEDIUM", "message": "Resource scope is wildcard '*' (applies to all resources)"},
+    {"entity": "user/svc-backup", "policy": "S3BackupAccess", "severity": "HIGH", "message": "Wildcard/broad action 's3:*' allowed"},
+    {"entity": "user/svc-backup", "policy": "S3BackupAccess", "severity": "MEDIUM", "message": "Resource scope is wildcard '*' (applies to all resources)"},
+    {"entity": "role/ci-deploy-role", "policy": "DeployPermissions", "severity": "MEDIUM", "message": "Sensitive action 'iam:PassRole' granted"},
+    {"entity": "role/ci-deploy-role", "policy": "DeployPermissions", "severity": "HIGH", "message": "Wildcard/broad action 'ec2:*' allowed"},
+    {"entity": "role/ci-deploy-role", "policy": "DeployPermissions", "severity": "MEDIUM", "message": "Resource scope is wildcard '*' (applies to all resources)"}
+  ]
+}
